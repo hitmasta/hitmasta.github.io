@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="icon" type="image/png" href="/sets/U15-files/icon.png"/>
+	<link rel="stylesheet" href="/resources/header.css">
+	<title>U15 visual preview</title>
+	<style>
+		@font-face {
+			font-family: Beleren;
+			src: url('/resources/beleren.ttf');
+		}
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			overscroll-behavior: none;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+		.main-content {
+			position: relative;
+			width: 100%;
+			float: left;
+			z-index: 2;
+			justify-items: center;
+		}
+		.sidebar {
+			position: sticky;
+			top: 0;
+			display: none;
+			text-align: center;
+			padding-right: 3%;
+			z-index: 1;
+			justify-items: center;
+		}
+		.sidebar-container {
+			width: 80%;
+			max-width: 375px;
+			position: relative;
+		}
+		.sidebar-h-img {
+			display: none;
+			transform: rotate(90deg);
+			position: absolute;
+			left: 10%;
+			top: 10%;
+			width: 85%;
+		}
+		.sidebar-img {
+			vertical-align: middle;
+			width: 100%;
+		}
+		.close-btn {
+			background: url('/img/close.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+			width: 10%;
+			height: 10%;
+			border: none;
+			cursor: pointer;
+			position: absolute;
+			right: 4%;
+		}
+		.close-btn:hover {
+			background: url('/img/close-hover.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+		}
+		.grid-container {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+			gap: 2px;
+			padding-left: 5%;
+			padding-right: 5%;
+			padding-bottom: 1%;
+			justify-items: center;
+			max-width: 1200px;
+		}
+		.grid-container img {
+			width: 100%;
+			height: auto;
+			display: block;
+			visibility: hidden;
+			cursor: pointer;
+		}
+		.banner {
+			width: 100%;
+			height: auto;
+			padding-top: 80px;
+			padding-bottom: 50px;
+		}
+		.logo {
+			display: block;
+			margin: auto;
+			max-width: 30%;
+			max-height: 320px;
+		}
+		.container {
+			position: relative;
+			width: 100%;
+		}
+		.container img {
+			width: 100%;
+			height: auto;
+		}
+		.flip-btn {
+			background: url('/img/flip.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+			width: 15%;
+			height: 11%;
+			cursor: pointer;
+			border: none;
+			position: absolute;
+			left: 50%;
+			top: 48%;
+			transform: translate(-50%, -50%);
+			opacity: 0.5;
+		}
+		.flip-btn:hover {
+			background: url('/img/flip-hover.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+		}
+		.dropdown {
+			background: rgba(23, 23, 23, 0.8);
+			border-radius: 8px;
+			position: absolute;
+			left: 10%;
+			width: fit-content;
+			margin: 20px 0;
+			padding: 5px 0;
+			display: flex;
+			flex-direction: column;
+			z-index: 3;
+		}
+		.dropdown .set-bar {
+			font-family: Beleren;
+			font-size: 20px;
+			text-decoration: none;
+			color: #e3e3e3;
+			display: flex;
+			gap: 10px;
+			align-items: center;
+			padding: 0 12px;
+			margin: 5px;
+		}
+		.dropdown .set-bar:hover {
+			background: rgba(163, 163, 163, 0.5);
+			color: #f3f3f3;
+		}
+		.dropdown .set-bar img {
+			width: 32px;
+		}
+		.dropdown .inactive {
+			height: 0px;
+			overflow: hidden;
+			margin: 0px 5px;
+		}
+		.preload-hidden {
+			display: none;
+		}
+		.addenda-container {
+			text-align: center;
+			width: fit-content;
+			max-width: 1200px;
+			padding: 0 5%;
+		}
+		/* This is here to enable the stickiness in a Float environment. I don't know why it works but it does */
+		.footer {
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<img class="preload-hidden" src="/img/dot.png" />
+	<img class="preload-hidden" src="/sets/U15-files/logo.png" />
+	<img class="preload-hidden" src="/sets/U15-files/icon.png" />
+		<div class="header">
+		<div class="search-grid">
+			<a href="/"><img class="sg-logo" src="/img/banner.png"></a>
+			<img class="sg-icon" src="/img/search.png">
+			<input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false" autocomplete="off" autocorrect="off" spellcheck="false">
+			<a href="/all-sets"><img src="/img/sets.png" class="sg-icon">Sets</a>
+			<a href="/deckbuilder"><img src="/img/deck.png" class="sg-icon">Deckbuilder</a>
+			<a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
+		</div>
+	</div>
+
+	<div class="dropdown" onmouseenter="rolldown()" onmouseleave="rollup()">
+	
+		<a class="set-bar" href="U15"><img src="/sets/U15-files/icon.png">U15</a>
+	
+		</div>
+		<div class="banner">
+		<img class="logo" src="/sets/U15-files/logo.png">
+		</div>
+		<div class="main-content" id="main-content">
+			<div class="grid-container">
+					<div class="container"><img alt="/sets/U15-files/img/5_Älteres Ehepaar im Strandkorb.png" id="5_Älteres Ehepaar im Strandkorb" data-flag="@X" onclick="openSidebar('5_Älteres Ehepaar im Strandkorb',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/35_Achterwasserpirat.png" id="35_Achterwasserpirat" data-flag="@X" onclick="openSidebar('35_Achterwasserpirat',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/64_Ausgehungerte Riesenmücken.png" id="64_Ausgehungerte Riesenmücken" data-flag="@X" onclick="openSidebar('64_Ausgehungerte Riesenmücken',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/97_Blitze aus Martins After.png" id="97_Blitze aus Martins After" data-flag="@X" onclick="openSidebar('97_Blitze aus Martins After',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/123_1g1 Kotti jetzt.png" id="123_1g1 Kotti jetzt" data-flag="@X" onclick="openSidebar('123_1g1 Kotti jetzt',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/7_Beachbar-DJ.png" id="7_Beachbar-DJ" data-flag="@X" onclick="openSidebar('7_Beachbar-DJ',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/38_Brieföffner.png" id="38_Brieföffner" data-flag="@X" onclick="openSidebar('38_Brieföffner',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/66_Bürger im Koma.png" id="66_Bürger im Koma" data-flag="@X" onclick="openSidebar('66_Bürger im Koma',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/99_Dicker Hund.png" id="99_Dicker Hund" data-flag="@X" onclick="openSidebar('99_Dicker Hund',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/124_5m Nacktschnecke im Bad.png" id="124_5m Nacktschnecke im Bad" data-flag="@X" onclick="openSidebar('124_5m Nacktschnecke im Bad',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/8_Ein Ball Haare von Nox.png" id="8_Ein Ball Haare von Nox" data-flag="@X" onclick="openSidebar('8_Ein Ball Haare von Nox',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/41_Einfach Nein.png" id="41_Einfach Nein" data-flag="@X" onclick="openSidebar('41_Einfach Nein',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/67_An der falschen Stelle buddeln.png" id="67_An der falschen Stelle buddeln" data-flag="@X" onclick="openSidebar('67_An der falschen Stelle buddeln',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/101_Genervte Nachbarn.png" id="101_Genervte Nachbarn" data-flag="@X" onclick="openSidebar('101_Genervte Nachbarn',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/125_Affentittengeile Tittenaffen.png" id="125_Affentittengeile Tittenaffen" data-flag="@X" onclick="openSidebar('125_Affentittengeile Tittenaffen',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/12_Kampfmittelräumdienst.png" id="12_Kampfmittelräumdienst" data-flag="@X" onclick="openSidebar('12_Kampfmittelräumdienst',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/42_Elon.png" id="42_Elon" data-flag="@X" onclick="openSidebar('42_Elon',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/69_Fledermaus.png" id="69_Fledermaus" data-flag="@X" onclick="openSidebar('69_Fledermaus',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/102_Hart raiden.png" id="102_Hart raiden" data-flag="@X" onclick="openSidebar('102_Hart raiden',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/128_Assel.png" id="128_Assel" data-flag="@X" onclick="openSidebar('128_Assel',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/15_Lenkdrachen.png" id="15_Lenkdrachen" data-flag="@X" onclick="openSidebar('15_Lenkdrachen',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/43_Fliege.png" id="43_Fliege" data-flag="@X" onclick="openSidebar('43_Fliege',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/71_In die Brennesseln schubsen.png" id="71_In die Brennesseln schubsen" data-flag="@X" onclick="openSidebar('71_In die Brennesseln schubsen',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/103_Kakerlake.png" id="103_Kakerlake" data-flag="@X" onclick="openSidebar('103_Kakerlake',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/129_Back to the Roots.png" id="129_Back to the Roots" data-flag="@X" onclick="openSidebar('129_Back to the Roots',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/17_Opulente Opernbesucher*innen.png" id="17_Opulente Opernbesucher*innen" data-flag="@X" onclick="openSidebar('17_Opulente Opernbesucher*innen',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/45_Ginger Aal.png" id="45_Ginger Aal" data-flag="@X" onclick="openSidebar('45_Ginger Aal',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/72_Jetzt erst recht.png" id="72_Jetzt erst recht" data-flag="@X" onclick="openSidebar('72_Jetzt erst recht',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/104_Kletterwaldmitarbeiterin.png" id="104_Kletterwaldmitarbeiterin" data-flag="@X" onclick="openSidebar('104_Kletterwaldmitarbeiterin',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/132_Drei Mitternachtskiffer.png" id="132_Drei Mitternachtskiffer" data-flag="@X" onclick="openSidebar('132_Drei Mitternachtskiffer',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/18_Rentner*innen auf Radtour.png" id="18_Rentner*innen auf Radtour" data-flag="@X" onclick="openSidebar('18_Rentner*innen auf Radtour',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/47_Kite-Surfer.png" id="47_Kite-Surfer" data-flag="@X" onclick="openSidebar('47_Kite-Surfer',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/79_Raucheraal.png" id="79_Raucheraal" data-flag="@X" onclick="openSidebar('79_Raucheraal',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/106_Krimineller Dünenwanderer.png" id="106_Krimineller Dünenwanderer" data-flag="@X" onclick="openSidebar('106_Krimineller Dünenwanderer',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/134_Ganz viele Babyfrösche.png" id="134_Ganz viele Babyfrösche" data-flag="@X" onclick="openSidebar('134_Ganz viele Babyfrösche',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/21_Shopper im ALDI.png" id="21_Shopper im ALDI" data-flag="@X" onclick="openSidebar('21_Shopper im ALDI',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/48_Kormoran.png" id="48_Kormoran" data-flag="@X" onclick="openSidebar('48_Kormoran',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/83_Spaziergang zu zweit.png" id="83_Spaziergang zu zweit" data-flag="@X" onclick="openSidebar('83_Spaziergang zu zweit',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/107_Minigolfschläger.png" id="107_Minigolfschläger" data-flag="@X" onclick="openSidebar('107_Minigolfschläger',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/135_Gewöhnliche Schildkröte ohne Fähigkeiten.png" id="135_Gewöhnliche Schildkröte ohne Fähigkeiten" data-flag="@X" onclick="openSidebar('135_Gewöhnliche Schildkröte ohne Fähigkeiten',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/23_Skorpion.png" id="23_Skorpion" data-flag="@X" onclick="openSidebar('23_Skorpion',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/53_Mööööööp!.png" id="53_Mööööööp!" data-flag="@X" onclick="openSidebar('53_Mööööööp!',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/84_Spinne.png" id="84_Spinne" data-flag="@X" onclick="openSidebar('84_Spinne',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/112_Reef Shark.png" id="112_Reef Shark" data-flag="@X" onclick="openSidebar('112_Reef Shark',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/140_Kröte.png" id="140_Kröte" data-flag="@X" onclick="openSidebar('140_Kröte',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/24_Sommer-Sonne-Kaktus.png" id="24_Sommer-Sonne-Kaktus" data-flag="@X" onclick="openSidebar('24_Sommer-Sonne-Kaktus',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/55_Richtig große Qualle.png" id="55_Richtig große Qualle" data-flag="@X" onclick="openSidebar('55_Richtig große Qualle',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/85_Sprotz-Hippo.png" id="85_Sprotz-Hippo" data-flag="@X" onclick="openSidebar('85_Sprotz-Hippo',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/113_Rennradfahrerin.png" id="113_Rennradfahrerin" data-flag="@X" onclick="openSidebar('113_Rennradfahrerin',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/142_Minikrokodil mit Ventil.png" id="142_Minikrokodil mit Ventil" data-flag="@X" onclick="openSidebar('142_Minikrokodil mit Ventil',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/27_Souvenirsammler.png" id="27_Souvenirsammler" data-flag="@X" onclick="openSidebar('27_Souvenirsammler',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/56_Sand im Bett.png" id="56_Sand im Bett" data-flag="@X" onclick="openSidebar('56_Sand im Bett',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/86_Untotes Pferd.png" id="86_Untotes Pferd" data-flag="@X" onclick="openSidebar('86_Untotes Pferd',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/114_Roeh Kleingamele.png" id="114_Roeh Kleingamele" data-flag="@X" onclick="openSidebar('114_Roeh Kleingamele',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/143_Powersalat.png" id="143_Powersalat" data-flag="@X" onclick="openSidebar('143_Powersalat',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/28_Spaziergang am Strand.png" id="28_Spaziergang am Strand" data-flag="@X" onclick="openSidebar('28_Spaziergang am Strand',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/58_Spaziergang nach Peenemünde.png" id="58_Spaziergang nach Peenemünde" data-flag="@X" onclick="openSidebar('58_Spaziergang nach Peenemünde',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/87_Verkohlte Leichen.png" id="87_Verkohlte Leichen" data-flag="@X" onclick="openSidebar('87_Verkohlte Leichen',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/118_Shopper im Edeka.png" id="118_Shopper im Edeka" data-flag="@X" onclick="openSidebar('118_Shopper im Edeka',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/145_Spaziergang ins Grüne.png" id="145_Spaziergang ins Grüne" data-flag="@X" onclick="openSidebar('145_Spaziergang ins Grüne',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/29_Strafschnaps.png" id="29_Strafschnaps" data-flag="@X" onclick="openSidebar('29_Strafschnaps',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/59_Weg, Wand.png" id="59_Weg, Wand" data-flag="@X" onclick="openSidebar('59_Weg, Wand',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/88_Vorzeitige Abreise.png" id="88_Vorzeitige Abreise" data-flag="@X" onclick="openSidebar('88_Vorzeitige Abreise',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/119_So wirft man eine Frisbee.png" id="119_So wirft man eine Frisbee" data-flag="@X" onclick="openSidebar('119_So wirft man eine Frisbee',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/148_Tot.png" id="148_Tot" data-flag="@X" onclick="openSidebar('148_Tot',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/31_Strandsnacks.png" id="31_Strandsnacks" data-flag="@X" onclick="openSidebar('31_Strandsnacks',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/60_Widerstandskämpfer.png" id="60_Widerstandskämpfer" data-flag="@X" onclick="openSidebar('60_Widerstandskämpfer',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/90_Würzen.png" id="90_Würzen" data-flag="@X" onclick="openSidebar('90_Würzen',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/120_Spaziergang zum Supermarkt.png" id="120_Spaziergang zum Supermarkt" data-flag="@X" onclick="openSidebar('120_Spaziergang zum Supermarkt',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/151_Zeltplatzfuchs.png" id="151_Zeltplatzfuchs" data-flag="@X" onclick="openSidebar('151_Zeltplatzfuchs',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/33_Topf voll Ingwertee.png" id="33_Topf voll Ingwertee" data-flag="@X" onclick="openSidebar('33_Topf voll Ingwertee',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/62_Zeltplatzwächter.png" id="62_Zeltplatzwächter" data-flag="@X" onclick="openSidebar('62_Zeltplatzwächter',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/91_Zombie.png" id="91_Zombie" data-flag="@X" onclick="openSidebar('91_Zombie',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/122_WHALE COCK.png" id="122_WHALE COCK" data-flag="@X" onclick="openSidebar('122_WHALE COCK',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/152_Züssower Apfelbaum.png" id="152_Züssower Apfelbaum" data-flag="@X" onclick="openSidebar('152_Züssower Apfelbaum',false)"></div>
+				<div class="container"><img alt="/img/er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img/er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img/er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img/er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div id="colorless" class="anchor"></div>
+				<div class="container"><img alt="/sets/U15-files/img/1_Goldsucher.png" id="1_Goldsucher" data-flag="@X" onclick="openSidebar('1_Goldsucher',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/168_Die ordentliche Jogginghose.png" id="168_Die ordentliche Jogginghose" data-flag="@X" onclick="openSidebar('168_Die ordentliche Jogginghose',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/170_Goldener Türstopper.png" id="170_Goldener Türstopper" data-flag="@X" onclick="openSidebar('170_Goldener Türstopper',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/172_Kranplatzverdichter.png" id="172_Kranplatzverdichter" data-flag="@X" onclick="openSidebar('172_Kranplatzverdichter',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/175_UBB-Fahrkarte.png" id="175_UBB-Fahrkarte" data-flag="@X" onclick="openSidebar('175_UBB-Fahrkarte',false)"></div>
+				<div class="container"><img alt="/sets/U15-files/img/178_Zeltplatzschranke.png" id="178_Zeltplatzschranke" data-flag="@X" onclick="openSidebar('178_Zeltplatzschranke',false)"></div>
+				<div class="container"><img alt="/img/e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/img/e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/img/e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/img/e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/img/er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img/er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img/er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img/er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img/er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+	</div>
+	</div>
+	<div class="sidebar" id="sidebar">
+		<div class="sidebar-container">
+			<img id="sidebar_img" class="sidebar-img" src="/img/er.png">
+			<img id="sidebar_h_img" class="sidebar-h-img">
+			<button class="flip-btn" id="sidebar-flip-btn" onclick="imgFlip('sidebar_img')"></button>
+		</div>
+		<button class="close-btn" onclick="closeSidebar()"></button>
+	</div>
+	<div class="footer"></div>
+
+	<script>
+	const delay = ms => new Promise(res => setTimeout(res, ms));
+		let specialchars = "";
+
+	document.addEventListener('DOMContentLoaded', async function() {
+		await fetch('/lists/all-cards.json')
+					.then(response => response.json())
+					.then(json => {
+						card_list = json;
+				}).catch(error => console.error('Error:', error));
+
+				await fetch('/resources/replacechars.txt')
+					.then(response => response.text())
+					.then(text => {
+						specialchars = text; 
+				}).catch(error => console.error('Error:', error));
+
+				card_list_arrayified = card_list.cards;
+
+		preloadImgs = document.getElementsByClassName('preload-hidden');
+
+		let images_loaded = [];
+
+		do {
+			await delay(100);
+			images_loaded = []
+			for (const img of preloadImgs)
+			{
+				images_loaded.push(isImageOk(img));
+			}
+		}
+		while (images_loaded.includes(false));
+
+		
+		loadImages();
+	});
+
+	function isImageOk(img) {
+		if (!img.complete || img.naturalWidth == 0) {
+			return false;
+		}
+
+		return true;
+	}
+
+	function loadImages() {
+		const images = document.querySelectorAll('.grid-container img');
+
+		images.forEach(img => {
+			const flag = img.getAttribute('data-flag');
+
+			if (flag === '@N') {
+				img.src = '/img/card_back.png';
+				img.removeAttribute("onclick");
+				img.style.cursor = 'default';
+			}
+			else
+			{
+				img.src = img.alt;
+
+				if (flag === '@E') {
+					img.removeAttribute("onclick");
+					img.style.cursor = 'default';
+				}
+			}
+
+			img.style.visibility = 'visible';
+		});
+	}
+
+	window.addEventListener('resize', function(event) {
+		setSidebarTop();
+	}, true);
+
+	function setSidebarTop() {
+		let vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+		let sh = document.getElementById('sidebar').offsetHeight;
+		let height = 100 * ((vh - sh) / 2) / vh;
+		document.getElementById('sidebar').style.top = height + '%';
+	}
+
+	let horizontal = false;
+
+	function imgFlip(num) {
+		tmp = document.getElementById(num).src;
+		console.log(num);
+		document.getElementById(num).src = document.getElementById(num).dataset.alt_src;
+		document.getElementById(num).dataset.alt_src = tmp;
+
+		if (num == 'sidebar_img')
+		{
+			const rotated_img = document.getElementById('sidebar_h_img');
+			const sidebar_img = document.getElementById('sidebar_img');
+
+			if (horizontal && rotated_img.style.display == 'none')
+			{
+				rotated_img.style.display = "block";
+				sidebar_img.style.filter = "blur(2px) brightness(0.7)";
+			}
+			else
+			{
+				rotated_img.style.display = "none";
+				sidebar_img.style.filter = "";
+			}
+		}
+	}
+
+	function openSidebar(id, h = false) {
+		horizontal = h;
+		scroll_pct = window.scrollY / document.documentElement.scrollHeight;
+
+		document.getElementById('sidebar').style.display = 'grid';
+
+		const rotated_img = document.getElementById('sidebar_h_img');
+		const sidebar_img = document.getElementById('sidebar_img');
+
+		sidebar_img.src = document.getElementById(id).src;
+		rotated_img.src = document.getElementById(id).src.replace("_back", "_front");
+
+		if (horizontal && !sidebar_img.src.includes("_back"))
+		{
+			rotated_img.style.display = "block";
+			sidebar_img.style.filter = "blur(2px) brightness(0.7)";
+		}
+		else
+		{
+			rotated_img.style.display = "none";
+			sidebar_img.style.filter = "";
+		}
+
+		if (document.getElementById(id).dataset.alt_src)
+		{
+			document.getElementById('sidebar_img').dataset.alt_src = document.getElementById(id).dataset.alt_src;
+			document.getElementById('sidebar-flip-btn').style.display = 'block';
+		}
+		else
+		{
+			delete document.getElementById('sidebar_img').dataset.alt_src;
+			document.getElementById('sidebar-flip-btn').style.display = 'none';
+		}
+		document.getElementById('main-content').style.width = '60%';
+
+		scroll_pos = scroll_pct * document.documentElement.scrollHeight;
+		window.scrollTo(window.scrollX, scroll_pos);
+		setSidebarTop();
+	}
+
+	function closeSidebar() {
+		scroll_pct = window.scrollY / document.documentElement.scrollHeight;
+
+		document.getElementById('sidebar').style.display = 'none';
+		document.getElementById('main-content').style.width = '100%';
+
+
+		scroll_pos = scroll_pct * document.documentElement.scrollHeight;
+		window.scrollTo(window.scrollX, scroll_pos);
+	}
+
+	function rolldown() {
+		var sets = document.querySelectorAll('.inactive');
+		for(const set of sets)
+		{
+			set.style.height = "auto";
+			set.style.margin = "5px";
+		}
+	}
+
+	function rollup() {
+		var sets = document.querySelectorAll('.inactive');
+		for(const set of sets)
+		{
+			set.style.height = "0px";
+			set.style.margin = "0px 5px";
+		}
+	}
+
+	document.getElementById("search").addEventListener("keypress", function(event) {
+		if (event.key === "Enter") {
+			event.preventDefault();
+			search();
+		}
+	});
+
+	function search() {
+		const url = new URL('search', window.location.origin);
+		url.searchParams.append('search', document.getElementById("search").value);
+		window.location.href = url;
+	}
+
+		function randomCard() {
+				let i = Math.floor(Math.random() * (card_list_arrayified.length + 1));
+				let random_card = card_list_arrayified[i];
+
+				const url = new URL('card', window.location.origin);
+				const params = {
+					set: random_card.set,
+					num: random_card.number,
+					name: random_card.card_name
+				}
+				for (const key in params) {
+					url.searchParams.append(key, params[key]);
+				}
+
+				window.location.href = url;
+			}
+	</script>
+</body>
+</html>

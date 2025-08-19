@@ -1,0 +1,528 @@
+﻿[
+    {
+        "card_name": "\u00c4lteres Ehepaar im Strandkorb",
+        "number": 5,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Achterwasserpirat",
+        "number": 35,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Ausgehungerte Riesenm\u00fccken",
+        "number": 64,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Blitze aus Martins After",
+        "number": 97,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "1g1 Kotti jetzt",
+        "number": 123,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Beachbar-DJ",
+        "number": 7,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Brief\u00f6ffner",
+        "number": 38,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "B\u00fcrger im Koma",
+        "number": 66,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Dicker Hund",
+        "number": 99,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "5m Nacktschnecke im Bad",
+        "number": 124,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Ein Ball Haare von Nox",
+        "number": 8,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Einfach Nein",
+        "number": 41,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "An der falschen Stelle buddeln",
+        "number": 67,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Genervte Nachbarn",
+        "number": 101,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Affentittengeile Tittenaffen",
+        "number": 125,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Kampfmittelr\u00e4umdienst",
+        "number": 12,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Elon",
+        "number": 42,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Fledermaus",
+        "number": 69,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Hart raiden",
+        "number": 102,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Assel",
+        "number": 128,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Lenkdrachen",
+        "number": 15,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Fliege",
+        "number": 43,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "In die Brennesseln schubsen",
+        "number": 71,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Kakerlake",
+        "number": 103,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Back to the Roots",
+        "number": 129,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Opulente Opernbesucher*innen",
+        "number": 17,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Ginger Aal",
+        "number": 45,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Jetzt erst recht",
+        "number": 72,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Kletterwaldmitarbeiterin",
+        "number": 104,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Drei Mitternachtskiffer",
+        "number": 132,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Rentner*innen auf Radtour",
+        "number": 18,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Kite-Surfer",
+        "number": 47,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Raucheraal",
+        "number": 79,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Krimineller D\u00fcnenwanderer",
+        "number": 106,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Ganz viele Babyfr\u00f6sche",
+        "number": 134,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Shopper im ALDI",
+        "number": 21,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Kormoran",
+        "number": 48,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Spaziergang zu zweit",
+        "number": 83,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Minigolfschl\u00e4ger",
+        "number": 107,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Gew\u00f6hnliche Schildkr\u00f6te ohne F\u00e4higkeiten",
+        "number": 135,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Skorpion",
+        "number": 23,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "M\u00f6\u00f6\u00f6\u00f6\u00f6\u00f6p!",
+        "number": 53,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Spinne",
+        "number": 84,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Reef Shark",
+        "number": 112,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Kr\u00f6te",
+        "number": 140,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Sommer-Sonne-Kaktus",
+        "number": 24,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Richtig gro\u00dfe Qualle",
+        "number": 55,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Sprotz-Hippo",
+        "number": 85,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Rennradfahrerin",
+        "number": 113,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Minikrokodil mit Ventil",
+        "number": 142,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Souvenirsammler",
+        "number": 27,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Sand im Bett",
+        "number": 56,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Untotes Pferd",
+        "number": 86,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Roeh Kleingamele",
+        "number": 114,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Powersalat",
+        "number": 143,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Spaziergang am Strand",
+        "number": 28,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Spaziergang nach Peenem\u00fcnde",
+        "number": 58,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Verkohlte Leichen",
+        "number": 87,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Shopper im Edeka",
+        "number": 118,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Spaziergang ins Gr\u00fcne",
+        "number": 145,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Strafschnaps",
+        "number": 29,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Weg, Wand",
+        "number": 59,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Vorzeitige Abreise",
+        "number": 88,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "So wirft man eine Frisbee",
+        "number": 119,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Tot",
+        "number": 148,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Strandsnacks",
+        "number": 31,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Widerstandsk\u00e4mpfer",
+        "number": 60,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "W\u00fcrzen",
+        "number": 90,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Spaziergang zum Supermarkt",
+        "number": 120,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Zeltplatzfuchs",
+        "number": 151,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Topf voll Ingwertee",
+        "number": 33,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Zeltplatzw\u00e4chter",
+        "number": 62,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Zombie",
+        "number": 91,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "WHALE COCK",
+        "number": 122,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Z\u00fcssower Apfelbaum",
+        "number": 152,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "er"
+    },
+    {
+        "card_name": "er"
+    },
+    {
+        "card_name": "er"
+    },
+    {
+        "card_name": "er"
+    },
+    "a->colorless",
+    {
+        "card_name": "Goldsucher",
+        "number": 1,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Die ordentliche Jogginghose",
+        "number": 168,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Goldener T\u00fcrstopper",
+        "number": 170,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Kranplatzverdichter",
+        "number": 172,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "UBB-Fahrkarte",
+        "number": 175,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "Zeltplatzschranke",
+        "number": 178,
+        "shape": "normal",
+        "set": "U15"
+    },
+    {
+        "card_name": "e"
+    },
+    {
+        "card_name": "e"
+    },
+    {
+        "card_name": "e"
+    },
+    {
+        "card_name": "e"
+    },
+    {
+        "card_name": "er"
+    },
+    {
+        "card_name": "er"
+    },
+    {
+        "card_name": "er"
+    },
+    {
+        "card_name": "er"
+    },
+    {
+        "card_name": "er"
+    }
+]

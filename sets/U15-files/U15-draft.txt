@@ -1,0 +1,1062 @@
+﻿[CustomCards]
+	[
+		{
+			"name": "Widerstandskämpfer",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Enchantment Creature — Warrior",
+			"collector_number": "60",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/60_Widerstandskämpfer.png"
+			}
+		},
+		{
+			"name": "Goldsucher",
+			"rarity": "common",
+			"mana_cost": "{1}",
+			"type": "Enchantment Creature — Dwarf",
+			"collector_number": "1",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/1_Goldsucher.png"
+			}
+		},
+		{
+			"name": "Skorpion",
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+			"type": "Creature — Scorpion",
+			"collector_number": "23",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/23_Skorpion.png"
+			}
+		},
+		{
+			"name": "Fliege",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Creature — Insect",
+			"collector_number": "43",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/43_Fliege.png"
+			}
+		},
+		{
+			"name": "Fledermaus",
+			"rarity": "common",
+			"mana_cost": "{1}{B}",
+			"type": "Creature — Bat",
+			"collector_number": "69",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/69_Fledermaus.png"
+			}
+		},
+		{
+			"name": "Spinne",
+			"rarity": "common",
+			"mana_cost": "{1}{B}",
+			"type": "Creature — Spider",
+			"collector_number": "84",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/84_Spinne.png"
+			}
+		},
+		{
+			"name": "Kakerlake",
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+			"type": "Creature — Insect",
+			"collector_number": "103",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/103_Kakerlake.png"
+			}
+		},
+		{
+			"name": "Kröte",
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+			"type": "Creature — Frog",
+			"collector_number": "140",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/140_Kröte.png"
+			}
+		},
+		{
+			"name": "Zombie",
+			"rarity": "common",
+			"mana_cost": "{1}{B}",
+			"type": "Enchantment Creature — Zombie",
+			"collector_number": "91",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/91_Zombie.png"
+			}
+		},
+		{
+			"name": "Shopper im ALDI",
+			"rarity": "common",
+			"mana_cost": "{2}{W}",
+			"type": "Creature — Human",
+			"collector_number": "21",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/21_Shopper im ALDI.png"
+			}
+		},
+		{
+			"name": "Lenkdrachen",
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+			"type": "Artifact — Vehicle",
+			"collector_number": "15",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/15_Lenkdrachen.png"
+			}
+		},
+		{
+			"name": "Spaziergang am Strand",
+			"rarity": "common",
+			"mana_cost": "{2}{W}",
+			"type": "Sorcery",
+			"collector_number": "28",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/28_Spaziergang am Strand.png"
+			}
+		},
+		{
+			"name": "Souvenirsammler",
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+			"type": "Creature — Human",
+			"collector_number": "27",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/27_Souvenirsammler.png"
+			}
+		},
+		{
+			"name": "Älteres Ehepaar im Strandkorb",
+			"rarity": "common",
+			"mana_cost": "{2}{W}",
+			"type": "Creature — Human",
+			"collector_number": "5",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/5_Älteres Ehepaar im Strandkorb.png"
+			}
+		},
+		{
+			"name": "Beachbar-DJ",
+			"rarity": "common",
+			"mana_cost": "{4}{W}",
+			"type": "Creature — Human",
+			"collector_number": "7",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/7_Beachbar-DJ.png"
+			}
+		},
+		{
+			"name": "Rentner*innen auf Radtour",
+			"rarity": "common",
+			"mana_cost": "{3}{W}{W}",
+			"type": "Creature — Human",
+			"collector_number": "18",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/18_Rentner*innen auf Radtour.png"
+			}
+		},
+		{
+			"name": "Ein Ball Haare von Nox",
+			"rarity": "common",
+			"mana_cost": "{2}{W}",
+			"type": "Artifact",
+			"collector_number": "8",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/8_Ein Ball Haare von Nox.png"
+			}
+		},
+		{
+			"name": "Strafschnaps",
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+			"type": "Instant",
+			"collector_number": "29",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/29_Strafschnaps.png"
+			}
+		},
+		{
+			"name": "Topf voll Ingwertee",
+			"rarity": "common",
+			"mana_cost": "{W}",
+			"type": "Artifact — Food",
+			"collector_number": "33",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/33_Topf voll Ingwertee.png"
+			}
+		},
+		{
+			"name": "Elon",
+			"rarity": "common",
+			"mana_cost": "{U}",
+			"type": "Creature — Human",
+			"collector_number": "42",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/42_Elon.png"
+			}
+		},
+		{
+			"name": "Kite-Surfer",
+			"rarity": "common",
+			"mana_cost": "{4}{U}",
+			"type": "Creature — Human",
+			"collector_number": "47",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/47_Kite-Surfer.png"
+			}
+		},
+		{
+			"name": "Reef Shark",
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+			"type": "Creature — Shark",
+			"collector_number": "112",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/112_Reef Shark.png"
+			}
+		},
+		{
+			"name": "Kormoran",
+			"rarity": "common",
+			"mana_cost": "{2}{U}",
+			"type": "Creature — Bird",
+			"collector_number": "48",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/48_Kormoran.png"
+			}
+		},
+		{
+			"name": "Zeltplatzwächter",
+			"rarity": "common",
+			"mana_cost": "{3}{U}",
+			"type": "Creature — Human",
+			"collector_number": "62",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/62_Zeltplatzwächter.png"
+			}
+		},
+		{
+			"name": "Richtig große Qualle",
+			"rarity": "common",
+			"mana_cost": "{5}{U}{U}",
+			"type": "Creature — Jellyfish Babo",
+			"collector_number": "55",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/55_Richtig große Qualle.png"
+			}
+		},
+		{
+			"name": "Sand im Bett",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Sorcery",
+			"collector_number": "56",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/56_Sand im Bett.png"
+			}
+		},
+		{
+			"name": "Weg, Wand",
+			"rarity": "common",
+			"mana_cost": "{2}{U}",
+			"type": "Instant",
+			"collector_number": "59",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/59_Weg, Wand.png"
+			}
+		},
+		{
+			"name": "Spaziergang nach Peenemünde",
+			"rarity": "common",
+			"mana_cost": "{3}{U}",
+			"type": "Sorcery",
+			"collector_number": "58",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/58_Spaziergang nach Peenemünde.png"
+			}
+		},
+		{
+			"name": "Einfach Nein",
+			"rarity": "common",
+			"mana_cost": "{1}{U}{U}",
+			"type": "Instant",
+			"collector_number": "41",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/41_Einfach Nein.png"
+			}
+		},
+		{
+			"name": "Bürger im Koma",
+			"rarity": "common",
+			"mana_cost": "{B}",
+			"type": "Creature — Human",
+			"collector_number": "66",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/66_Bürger im Koma.png"
+			}
+		},
+		{
+			"name": "Verkohlte Leichen",
+			"rarity": "common",
+			"mana_cost": "{2}{B}",
+			"type": "Creature — Zombie",
+			"collector_number": "87",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/87_Verkohlte Leichen.png"
+			}
+		},
+		{
+			"name": "Raucheraal",
+			"rarity": "common",
+			"mana_cost": "{2}{B}",
+			"type": "Creature — Fish",
+			"collector_number": "79",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/79_Raucheraal.png"
+			}
+		},
+		{
+			"name": "Ausgehungerte Riesenmücken",
+			"rarity": "common",
+			"mana_cost": "{3}{B}",
+			"type": "Creature — Insect",
+			"collector_number": "64",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/64_Ausgehungerte Riesenmücken.png"
+			}
+		},
+		{
+			"name": "Sprotz-Hippo",
+			"rarity": "common",
+			"mana_cost": "{4}{B}{B}",
+			"type": "Creature — Hippo",
+			"collector_number": "85",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/85_Sprotz-Hippo.png"
+			}
+		},
+		{
+			"name": "Vorzeitige Abreise",
+			"rarity": "common",
+			"mana_cost": "{4}{B}",
+			"type": "Instant",
+			"collector_number": "88",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/88_Vorzeitige Abreise.png"
+			}
+		},
+		{
+			"name": "Würzen",
+			"rarity": "common",
+			"mana_cost": "{2}{B}",
+			"type": "Sorcery",
+			"collector_number": "90",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/90_Würzen.png"
+			}
+		},
+		{
+			"name": "Jetzt erst recht",
+			"rarity": "common",
+			"mana_cost": "{2}{B}",
+			"type": "Sorcery",
+			"collector_number": "72",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/72_Jetzt erst recht.png"
+			}
+		},
+		{
+			"name": "An der falschen Stelle buddeln",
+			"rarity": "common",
+			"mana_cost": "{2}{B}",
+			"type": "Sorcery",
+			"collector_number": "67",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/67_An der falschen Stelle buddeln.png"
+			}
+		},
+		{
+			"name": "Spaziergang zu zweit",
+			"rarity": "common",
+			"mana_cost": "{1}{B}{B}",
+			"type": "Sorcery",
+			"collector_number": "83",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/83_Spaziergang zu zweit.png"
+			}
+		},
+		{
+			"name": "In die Brennesseln schubsen",
+			"rarity": "common",
+			"mana_cost": "{1}{B}",
+			"type": "Instant",
+			"collector_number": "71",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/71_In die Brennesseln schubsen.png"
+			}
+		},
+		{
+			"name": "Shopper im Edeka",
+			"rarity": "common",
+			"mana_cost": "{2}{R}",
+			"type": "Creature — Human",
+			"collector_number": "118",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/118_Shopper im Edeka.png"
+			}
+		},
+		{
+			"name": "Kletterwaldmitarbeiterin",
+			"rarity": "common",
+			"mana_cost": "{2}{R}",
+			"type": "Creature — Human",
+			"collector_number": "104",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/104_Kletterwaldmitarbeiterin.png"
+			}
+		},
+		{
+			"name": "Genervte Nachbarn",
+			"rarity": "common",
+			"mana_cost": "{4}{R}",
+			"type": "Creature — Human",
+			"collector_number": "101",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/101_Genervte Nachbarn.png"
+			}
+		},
+		{
+			"name": "Rennradfahrerin",
+			"rarity": "common",
+			"mana_cost": "{2}{R}",
+			"type": "Creature — Human",
+			"collector_number": "113",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/113_Rennradfahrerin.png"
+			}
+		},
+		{
+			"name": "Krimineller Dünenwanderer",
+			"rarity": "common",
+			"mana_cost": "{3}{R}",
+			"type": "Creature — Human",
+			"collector_number": "106",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/106_Krimineller Dünenwanderer.png"
+			}
+		},
+		{
+			"name": "Dicker Hund",
+			"rarity": "common",
+			"mana_cost": "{4}{R}{R}",
+			"type": "Creature — Dog",
+			"collector_number": "99",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/99_Dicker Hund.png"
+			}
+		},
+		{
+			"name": "WHALE COCK",
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+			"type": "Sorcery",
+			"collector_number": "122",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/122_WHALE COCK.png"
+			}
+		},
+		{
+			"name": "Hart raiden",
+			"rarity": "common",
+			"mana_cost": "{3}{R}",
+			"type": "Instant",
+			"collector_number": "102",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/102_Hart raiden.png"
+			}
+		},
+		{
+			"name": "Spaziergang zum Supermarkt",
+			"rarity": "common",
+			"mana_cost": "{2}{R}",
+			"type": "Sorcery",
+			"collector_number": "120",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/120_Spaziergang zum Supermarkt.png"
+			}
+		},
+		{
+			"name": "So wirft man eine Frisbee",
+			"rarity": "common",
+			"mana_cost": "{R}",
+			"type": "Instant",
+			"collector_number": "119",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/119_So wirft man eine Frisbee.png"
+			}
+		},
+		{
+			"name": "Blitze aus Martins After",
+			"rarity": "common",
+			"mana_cost": "{4}{R}",
+			"type": "Instant",
+			"collector_number": "97",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/97_Blitze aus Martins After.png"
+			}
+		},
+		{
+			"name": "Assel",
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+			"type": "Creature — Insect",
+			"collector_number": "128",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/128_Assel.png"
+			}
+		},
+		{
+			"name": "Minikrokodil mit Ventil",
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+			"type": "Artifact Creature — Crocodile",
+			"collector_number": "142",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/142_Minikrokodil mit Ventil.png"
+			}
+		},
+		{
+			"name": "Zeltplatzfuchs",
+			"rarity": "common",
+			"mana_cost": "{2}{G}",
+			"type": "Creature — Fox",
+			"collector_number": "151",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/151_Zeltplatzfuchs.png"
+			}
+		},
+		{
+			"name": "Affentittengeile Tittenaffen",
+			"rarity": "common",
+			"mana_cost": "{3}{G}",
+			"type": "Creature — Ape",
+			"collector_number": "125",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/125_Affentittengeile Tittenaffen.png"
+			}
+		},
+		{
+			"name": "Drei Mitternachtskiffer",
+			"rarity": "common",
+			"mana_cost": "{4}{G}",
+			"type": "Creature — Human",
+			"collector_number": "132",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/132_Drei Mitternachtskiffer.png"
+			}
+		},
+		{
+			"name": "Gewöhnliche Schildkröte ohne Fähigkeiten",
+			"rarity": "common",
+			"mana_cost": "{5}{G}",
+			"type": "Creature — Turtle",
+			"collector_number": "135",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/135_Gewöhnliche Schildkröte ohne Fähigkeiten.png"
+			}
+		},
+		{
+			"name": "5m Nacktschnecke im Bad",
+			"rarity": "common",
+			"mana_cost": "{5}{G}{G}",
+			"type": "Creature — Slug",
+			"collector_number": "124",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/124_5m Nacktschnecke im Bad.png"
+			}
+		},
+		{
+			"name": "Spaziergang ins Grüne",
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+			"type": "Sorcery",
+			"collector_number": "145",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/145_Spaziergang ins Grüne.png"
+			}
+		},
+		{
+			"name": "Tot",
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+			"type": "Instant",
+			"collector_number": "148",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/148_Tot.png"
+			}
+		},
+		{
+			"name": "Back to the Roots",
+			"rarity": "common",
+			"mana_cost": "{2}{G}",
+			"type": "Sorcery",
+			"collector_number": "129",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/129_Back to the Roots.png"
+			}
+		},
+		{
+			"name": "1g1 Kotti jetzt",
+			"rarity": "common",
+			"mana_cost": "{G}",
+			"type": "Instant",
+			"collector_number": "123",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/123_1g1 Kotti jetzt.png"
+			}
+		},
+		{
+			"name": "Powersalat",
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+			"type": "Artifact — Food",
+			"collector_number": "143",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/143_Powersalat.png"
+			}
+		},
+		{
+			"name": "Zeltplatzschranke",
+			"rarity": "common",
+			"mana_cost": "{2}",
+			"type": "Artifact Creature — Wall",
+			"collector_number": "178",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/178_Zeltplatzschranke.png"
+			}
+		},
+		{
+			"name": "Kampfmittelräumdienst",
+			"rarity": "common",
+			"mana_cost": "{2}{W}",
+			"type": "Creature — Human",
+			"collector_number": "12",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/12_Kampfmittelräumdienst.png"
+			}
+		},
+		{
+			"name": "Ginger Aal",
+			"rarity": "common",
+			"mana_cost": "{2}{U}",
+			"type": "Creature — Fish",
+			"collector_number": "45",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/45_Ginger Aal.png"
+			}
+		},
+		{
+			"name": "Achterwasserpirat",
+			"rarity": "common",
+			"mana_cost": "{2}{U}",
+			"type": "Creature — Human Pirate",
+			"collector_number": "35",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/35_Achterwasserpirat.png"
+			}
+		},
+		{
+			"name": "Strandsnacks",
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+			"type": "Artifact — Food",
+			"collector_number": "31",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/31_Strandsnacks.png"
+			}
+		},
+		{
+			"name": "Brieföffner",
+			"rarity": "common",
+			"mana_cost": "{3}{U}",
+			"type": "Artifact — Equipment",
+			"collector_number": "38",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/38_Brieföffner.png"
+			}
+		},
+		{
+			"name": "Goldener Türstopper",
+			"rarity": "common",
+			"mana_cost": "{1}",
+			"type": "Artifact — Treasure",
+			"collector_number": "170",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/170_Goldener Türstopper.png"
+			}
+		},
+		{
+			"name": "Minigolfschläger",
+			"rarity": "common",
+			"mana_cost": "{R}",
+			"type": "Artifact — Equipment",
+			"collector_number": "107",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/107_Minigolfschläger.png"
+			}
+		},
+		{
+			"name": "Züssower Apfelbaum",
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+			"type": "Creature — Plant",
+			"collector_number": "152",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/152_Züssower Apfelbaum.png"
+			}
+		},
+		{
+			"name": "Mööööööp!",
+			"rarity": "common",
+			"mana_cost": "{U}",
+			"type": "Instant",
+			"collector_number": "53",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/53_Mööööööp!.png"
+			}
+		},
+		{
+			"name": "Die ordentliche Jogginghose",
+			"rarity": "common",
+			"mana_cost": "{1}",
+			"type": "Artifact — Equipment",
+			"collector_number": "168",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/168_Die ordentliche Jogginghose.png"
+			}
+		},
+		{
+			"name": "Untotes Pferd",
+			"rarity": "common",
+			"mana_cost": "{4}{B}",
+			"type": "Creature — Zombie Horse",
+			"collector_number": "86",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/86_Untotes Pferd.png"
+			}
+		},
+		{
+			"name": "Sommer-Sonne-Kaktus",
+			"rarity": "common",
+			"mana_cost": "{W}",
+			"type": "Creature — Plant",
+			"collector_number": "24",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/24_Sommer-Sonne-Kaktus.png"
+			}
+		},
+		{
+			"name": "Opulente Opernbesucher*innen",
+			"rarity": "common",
+			"mana_cost": "{3}{W}",
+			"type": "Creature — Human",
+			"collector_number": "17",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/17_Opulente Opernbesucher*innen.png"
+			}
+		},
+		{
+			"name": "Roeh Kleingamele",
+			"rarity": "common",
+			"mana_cost": "{R}",
+			"type": "Creature — Crustacean",
+			"collector_number": "114",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/114_Roeh Kleingamele.png"
+			}
+		},
+		{
+			"name": "Ganz viele Babyfrösche",
+			"rarity": "common",
+			"mana_cost": "{2}{G}",
+			"type": "Creature — Frog",
+			"collector_number": "134",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/134_Ganz viele Babyfrösche.png"
+			}
+		},
+		{
+			"name": "Kranplatzverdichter",
+			"rarity": "common",
+			"mana_cost": "{4}",
+			"type": "Artifact Creature — Construct",
+			"collector_number": "172",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/172_Kranplatzverdichter.png"
+			}
+		},
+		{
+			"name": "UBB-Fahrkarte",
+			"rarity": "common",
+			"mana_cost": "{1}",
+			"type": "Artifact",
+			"collector_number": "175",
+			"image_uris": {
+				"en": "https://mse-hub/sets/U15-files/img/175_UBB-Fahrkarte.png"
+			}
+		}
+	]
+
+[rare(1)]
+[uncommon(3)]
+[common(7)]
+	8 Widerstandskämpfer
+	8 Goldsucher
+	8 Skorpion
+	8 Fliege
+	8 Fledermaus
+	8 Spinne
+	8 Kakerlake
+	8 Kröte
+	8 Zombie
+	8 Shopper im ALDI
+	8 Lenkdrachen
+	8 Spaziergang am Strand
+	8 Souvenirsammler
+	8 Älteres Ehepaar im Strandkorb
+	8 Beachbar-DJ
+	8 Rentner*innen auf Radtour
+	8 Ein Ball Haare von Nox
+	8 Strafschnaps
+	8 Topf voll Ingwertee
+	8 Elon
+	8 Kite-Surfer
+	8 Reef Shark
+	8 Kormoran
+	8 Zeltplatzwächter
+	8 Richtig große Qualle
+	8 Sand im Bett
+	8 Weg, Wand
+	8 Spaziergang nach Peenemünde
+	8 Einfach Nein
+	8 Bürger im Koma
+	8 Verkohlte Leichen
+	8 Raucheraal
+	8 Ausgehungerte Riesenmücken
+	8 Sprotz-Hippo
+	8 Vorzeitige Abreise
+	8 Würzen
+	8 Jetzt erst recht
+	8 An der falschen Stelle buddeln
+	8 Spaziergang zu zweit
+	8 In die Brennesseln schubsen
+	8 Shopper im Edeka
+	8 Kletterwaldmitarbeiterin
+	8 Genervte Nachbarn
+	8 Rennradfahrerin
+	8 Krimineller Dünenwanderer
+	8 Dicker Hund
+	8 WHALE COCK
+	8 Hart raiden
+	8 Spaziergang zum Supermarkt
+	8 So wirft man eine Frisbee
+	8 Blitze aus Martins After
+	8 Assel
+	8 Minikrokodil mit Ventil
+	8 Zeltplatzfuchs
+	8 Affentittengeile Tittenaffen
+	8 Drei Mitternachtskiffer
+	8 Gewöhnliche Schildkröte ohne Fähigkeiten
+	8 5m Nacktschnecke im Bad
+	8 Spaziergang ins Grüne
+	8 Tot
+	8 Back to the Roots
+	8 1g1 Kotti jetzt
+	8 Powersalat
+	8 Zeltplatzschranke
+	8 Kampfmittelräumdienst
+	8 Ginger Aal
+	8 Achterwasserpirat
+	8 Strandsnacks
+	8 Brieföffner
+	8 Goldener Türstopper
+	8 Minigolfschläger
+	8 Züssower Apfelbaum
+	8 Mööööööp!
+	8 Die ordentliche Jogginghose
+	8 Untotes Pferd
+	8 Sommer-Sonne-Kaktus
+	8 Opulente Opernbesucher*innen
+	8 Roeh Kleingamele
+	8 Ganz viele Babyfrösche
+	8 Kranplatzverdichter
+	8 UBB-Fahrkarte
+[foil(1)]
+	12 Widerstandskämpfer
+	12 Goldsucher
+	12 Skorpion
+	12 Fliege
+	12 Fledermaus
+	12 Spinne
+	12 Kakerlake
+	12 Kröte
+	12 Zombie
+	12 Shopper im ALDI
+	12 Lenkdrachen
+	12 Spaziergang am Strand
+	12 Souvenirsammler
+	12 Älteres Ehepaar im Strandkorb
+	12 Beachbar-DJ
+	12 Rentner*innen auf Radtour
+	12 Ein Ball Haare von Nox
+	12 Strafschnaps
+	12 Topf voll Ingwertee
+	12 Elon
+	12 Kite-Surfer
+	12 Reef Shark
+	12 Kormoran
+	12 Zeltplatzwächter
+	12 Richtig große Qualle
+	12 Sand im Bett
+	12 Weg, Wand
+	12 Spaziergang nach Peenemünde
+	12 Einfach Nein
+	12 Bürger im Koma
+	12 Verkohlte Leichen
+	12 Raucheraal
+	12 Ausgehungerte Riesenmücken
+	12 Sprotz-Hippo
+	12 Vorzeitige Abreise
+	12 Würzen
+	12 Jetzt erst recht
+	12 An der falschen Stelle buddeln
+	12 Spaziergang zu zweit
+	12 In die Brennesseln schubsen
+	12 Shopper im Edeka
+	12 Kletterwaldmitarbeiterin
+	12 Genervte Nachbarn
+	12 Rennradfahrerin
+	12 Krimineller Dünenwanderer
+	12 Dicker Hund
+	12 WHALE COCK
+	12 Hart raiden
+	12 Spaziergang zum Supermarkt
+	12 So wirft man eine Frisbee
+	12 Blitze aus Martins After
+	12 Assel
+	12 Minikrokodil mit Ventil
+	12 Zeltplatzfuchs
+	12 Affentittengeile Tittenaffen
+	12 Drei Mitternachtskiffer
+	12 Gewöhnliche Schildkröte ohne Fähigkeiten
+	12 5m Nacktschnecke im Bad
+	12 Spaziergang ins Grüne
+	12 Tot
+	12 Back to the Roots
+	12 1g1 Kotti jetzt
+	12 Powersalat
+	12 Zeltplatzschranke
+	12 Kampfmittelräumdienst
+	12 Ginger Aal
+	12 Achterwasserpirat
+	12 Strandsnacks
+	12 Brieföffner
+	12 Goldener Türstopper
+	12 Minigolfschläger
+	12 Züssower Apfelbaum
+	12 Mööööööp!
+	12 Die ordentliche Jogginghose
+	12 Untotes Pferd
+	12 Sommer-Sonne-Kaktus
+	12 Opulente Opernbesucher*innen
+	12 Roeh Kleingamele
+	12 Ganz viele Babyfrösche
+	12 Kranplatzverdichter
+	12 UBB-Fahrkarte
+[wildcard(1)]
+	6 Widerstandskämpfer
+	6 Goldsucher
+	6 Skorpion
+	6 Fliege
+	6 Fledermaus
+	6 Spinne
+	6 Kakerlake
+	6 Kröte
+	6 Zombie
+	6 Shopper im ALDI
+	6 Lenkdrachen
+	6 Spaziergang am Strand
+	6 Souvenirsammler
+	6 Älteres Ehepaar im Strandkorb
+	6 Beachbar-DJ
+	6 Rentner*innen auf Radtour
+	6 Ein Ball Haare von Nox
+	6 Strafschnaps
+	6 Topf voll Ingwertee
+	6 Elon
+	6 Kite-Surfer
+	6 Reef Shark
+	6 Kormoran
+	6 Zeltplatzwächter
+	6 Richtig große Qualle
+	6 Sand im Bett
+	6 Weg, Wand
+	6 Spaziergang nach Peenemünde
+	6 Einfach Nein
+	6 Bürger im Koma
+	6 Verkohlte Leichen
+	6 Raucheraal
+	6 Ausgehungerte Riesenmücken
+	6 Sprotz-Hippo
+	6 Vorzeitige Abreise
+	6 Würzen
+	6 Jetzt erst recht
+	6 An der falschen Stelle buddeln
+	6 Spaziergang zu zweit
+	6 In die Brennesseln schubsen
+	6 Shopper im Edeka
+	6 Kletterwaldmitarbeiterin
+	6 Genervte Nachbarn
+	6 Rennradfahrerin
+	6 Krimineller Dünenwanderer
+	6 Dicker Hund
+	6 WHALE COCK
+	6 Hart raiden
+	6 Spaziergang zum Supermarkt
+	6 So wirft man eine Frisbee
+	6 Blitze aus Martins After
+	6 Assel
+	6 Minikrokodil mit Ventil
+	6 Zeltplatzfuchs
+	6 Affentittengeile Tittenaffen
+	6 Drei Mitternachtskiffer
+	6 Gewöhnliche Schildkröte ohne Fähigkeiten
+	6 5m Nacktschnecke im Bad
+	6 Spaziergang ins Grüne
+	6 Tot
+	6 Back to the Roots
+	6 1g1 Kotti jetzt
+	6 Powersalat
+	6 Zeltplatzschranke
+	6 Kampfmittelräumdienst
+	6 Ginger Aal
+	6 Achterwasserpirat
+	6 Strandsnacks
+	6 Brieföffner
+	6 Goldener Türstopper
+	6 Minigolfschläger
+	6 Züssower Apfelbaum
+	6 Mööööööp!
+	6 Die ordentliche Jogginghose
+	6 Untotes Pferd
+	6 Sommer-Sonne-Kaktus
+	6 Opulente Opernbesucher*innen
+	6 Roeh Kleingamele
+	6 Ganz viele Babyfrösche
+	6 Kranplatzverdichter
+	6 UBB-Fahrkarte
